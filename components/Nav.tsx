@@ -38,8 +38,15 @@ export default function NavBar() {
     );
 }
 
-// Navigation Item Component
-const NavItem = ({ href, label, active }) => (
+// Define TypeScript interface for props
+interface NavItemProps {
+    href: string;
+    label: string;
+    active?: boolean;
+}
+
+// Navigation Item Component with explicit typing
+const NavItem: React.FC<NavItemProps> = ({ href, label, active }) => (
     <Link 
         href={href} 
         className={`hover:text-blue-600 transition ${active ? "text-blue-900 font-bold" : "text-blue-800"}`}>
