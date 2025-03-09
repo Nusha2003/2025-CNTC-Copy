@@ -24,7 +24,7 @@ export default function NavBar() {
                     <NavItem href="/about" label="About" active={path === "/about"} />
                     <NavItem href="/event" label="Event" active={path === "/event"} />
                     <NavItem href="/sponsors" label="Sponsors" active={path === "/sponsors"} />
-                    <NavItem href="/posters" label="Posters" />
+                    {/* <NavItem href="/posters" label="Posters" /> */}
                 </div>
 
                 {/* Register Button */}

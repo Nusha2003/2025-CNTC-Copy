@@ -25,7 +25,7 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-      <body className={`${poppins.variable} font-sans bg-gradient-to-br from-blue-200  to-red-300 overscroll-none`}>
+      <body className={`${poppins.variable} font-sans bg-gradient-to-br from-red-300  to-blue-200 overscroll-none`}>
           <NavBar/>
             {children}
           <Footer/>

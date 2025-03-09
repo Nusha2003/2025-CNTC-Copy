@@ -1,99 +1,49 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import { Carousel } from '@trendyol-js/react-carousel';
-import ImageDiv from './PictureFrame';
+import Image from 'next/image';
 
-import David_Egleman from '../public/David_Eagleman.png';
-import Jonathan_Wolpaw from '../public/Jonathan_Wolpaw.png';
-import Nathan_Copeland from '../public/Nathan_Copeland.jpg';
-import Sergey_Stavisky from '../public/Sergey_Stavisky.jpg';
-import Sharena_Rice from '../public/Sharena_Rice.png';
-import Chloe_Duckworth from '../public/Chloe_Duckworth.png';
-import Caitlin_Ner from '../public/Caitlin_Ner.png';
-import Virginia_de_Sa from '../public/Virginia_de_Sa.png';
-import Lee_Miller from '../public/Lee_Miller.jpg';
-import Karen_Moxon from '../public/Karen_Moxon.jpg';
-import Jonathon_Schofield from '../public/Jonathon_Schofield.jpg';
-import Jose_Munoz from '../public/Jose_Munoz.jpg';
-import Gail_Gannon from '../public/Gail_Gannon.jpg';
+import Arash_Adami from '../public/Arash_Adami.jpg';
+import Philip_Sabes from '../public/Philip_Sabes.jpg';
+import JoJo_Platt from '../public/JoJo_Platt.jpg';
+import Gert_Cauwenberghs from '../public/Gert_Cauwenberghs.png';
+import Spero_Koulouras from '../public/Spero_Koulouras.png';
 
+export default function CarouselComponent() {
+  const speakers = [
+    { image: Arash_Adami, name: "Arash Adami" },
+    { image: Philip_Sabes, name: "Dr. Philip Sabes" },
+    { image: JoJo_Platt, name: "JoJo Platt" },
+    { image: Gert_Cauwenberghs, name: "Professor Gert Cauwenberghs" },
+    { image: Spero_Koulouras, name: "Spero Koulouras" },
+  ];
 
-export default function Carasouel() {
   return (
-    <Carousel show={3} slide={1} transition={0.5} infinite={true} useArrowKeys={true} autoSwipe={2000} swiping={true} responsive={true}>
-      <div className="flex flex-col align-middle items-center">
-        <ImageDiv image={David_Egleman} />
-        <p>
-          David Eagleman
-        </p>
-      </div>
-      <div className="flex flex-col align-middle items-center text-center">
-        <ImageDiv image={Nathan_Copeland} />
-        <p>
-          Nathan Copeland
-        </p>
-      </div>
-      <div className="flex flex-col align-middle items-center text-center">
-        <ImageDiv image={Sergey_Stavisky} />
-        <p>
-          Sergey Stavisky
-        </p>
-      </div>
-      <div className="flex flex-col align-middle items-center text-center">
-        <ImageDiv image={Sharena_Rice} />
-        <p>
-          Sharena Rice
-        </p>
-      </div>
-      <div className="flex flex-col align-middle items-center">
-        <ImageDiv image={Chloe_Duckworth} />
-        <p>
-          Chloe Duckworth
-        </p>
-      </div>
-      <div className="flex flex-col align-middle items-center">
-        <ImageDiv image={Caitlin_Ner} />
-        <p>
-          Caitlin Ner
-        </p>
-      </div>
-      <div className="flex flex-col align-middle items-center">
-        <ImageDiv image={Virginia_de_Sa} />
-        <p>
-          Virginia de Sa
-        </p>
-      </div>
-      <div className="flex flex-col align-middle items-center">
-        <ImageDiv image={Lee_Miller} />
-        <p>
-          Lee Miller
-        </p>
-      </div>
-      <div className="flex flex-col align-middle items-center">
-        <ImageDiv image={Karen_Moxon} />
-        <p>
-          Karen Moxon
-        </p>
-      </div>
-      <div className="flex flex-col align-middle items-center">
-        <ImageDiv image={Jonathon_Schofield} />
-        <p>
-          Jonathon Schofield
-        </p>
-      </div>
-      <div className="flex flex-col align-middle items-center">
-        <ImageDiv image={Jose_Munoz} />
-        <p>
-          Jose Munoz
-        </p>
-      </div>
-      <div className="flex flex-col align-middle items-center">
-        <ImageDiv image={Gail_Gannon} />
-        <p>
-          Gail Gannon
-        </p>
-      </div>
+    <Carousel 
+      show={3} 
+      slide={1} 
+      transition={0.5} 
+      infinite={true} 
+      useArrowKeys={true} 
+      autoSwipe={2000} 
+      swiping={true} 
+      responsive={true}
+    >
+      {speakers.map((speaker, index) => (
+        <div key={index} className="flex flex-col items-center text-center">
+          {/* Image container to enforce circular shape */}
+          <div className="w-40 h-40 rounded-full overflow-hidden flex justify-center items-center border-4 border-gray-300">
+            <Image
+              src={speaker.image}
+              alt={speaker.name}
+              width={160}
+              height={160}
+              className="object-cover"
+            />
+          </div>
+          {/* Speaker Name */}
+          <p className="mt-2 font-semibold">{speaker.name}</p>
+        </div>
+      ))}
     </Carousel>
   );
-
 }
