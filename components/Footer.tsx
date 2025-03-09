@@ -45,7 +45,7 @@ export default function Footer() {
                             </button>
                         </Link>
 
-                        <Link href={`mailto:conference2024@caneurotech.com`}>
+                        <Link href={`mailto:cntc2025@gmail.com`}>
                             <button className="flex px-4 flex-col items-center text-xs text-white">
                                 <EmailIcon/>
                                 Email
