@@ -6,6 +6,7 @@ import Carousel from '../../../components/Carousel';
 import about_1 from '../../../public/about_1.jpeg';
 import guest_speaker from '../../../public/about_1.jpeg';
 import industry_academic_panels from '../../../public/about_2.jpg';
+import panel from '../../../public/panel.png';
 import research_poster from '../../../public/research_poster.png';
 import bci_competition from '../../../public/bci_competition.jpg';
 
@@ -50,8 +51,8 @@ export default function About() {
         {/* Single Row for Event Components */}
         <div className="flex justify-between items-stretch gap-4 mx-6 md:mx-20">
           {[
-            { img: guest_speaker, title: "Distinguished Guest Speakers", desc: "Benefit from presentations by leading academics who will share detailed insights into their current research projects and the latest developments in neurotechnology." },
-            { img: industry_academic_panels, title: "Interactive Q&A Sessions", desc: "Engage in structured discussions that bridge the gap between theoretical research and practical applications, offering participants a comprehensive view of current challenges in neurotechnology." },
+            { img: panel, title: "Distinguished Guest Speakers", desc: "Benefit from presentations by leading academics who will share detailed insights into their current research projects and the latest developments in neurotechnology." },
+            { img: guest_speaker, title: "Interactive Q&A Sessions", desc: "Engage in structured discussions that bridge the gap between theoretical research and practical applications, offering participants a comprehensive view of current challenges in neurotechnology." },
             { img: industry_academic_panels, title: "Hands-on Workshops", desc: "Enhance practical skills through workshop sessions led by seasoned experts, offering the opportunity to explore innovative research methodologies and learn state-of-the-art techniques." },
             { img: bci_competition, title: "Competitive Presentations and BCI Competition", desc: "Participate in showcases where student clubs and research teams showcase their innovative projects, including a dedicated Brain-Computer Interface (BCI) competition judged by esteemed academic and industry judges." },
             { img: research_poster, title: "Research Poster Sessions", desc: "Explore poster sessions where students present their latest findings, showcasing research across various disciplines." },

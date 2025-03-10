@@ -15,7 +15,7 @@ export default function NavBar() {
                 {/* Logo Section */}
                 <Link href="/" className="flex items-center space-x-3">
                     <Image src={cntc} width={50} height={50} alt="Logo" className="rounded-full" />
-                    <span className="text-2xl font-semibold text-blue-800">California NeuroTech Conference</span>
+                    <span className="text-2xl font-semibold text-blue-800">California Neurotechnology Conference</span>
                 </Link>
 
                 {/* Navigation Links */}
