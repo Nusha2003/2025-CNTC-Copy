@@ -24,7 +24,9 @@ export default function NavBar() {
                     <NavItem href="/about" label="About" active={path === "/about"} />
                     <NavItem href="/event" label="Event" active={path === "/event"} />
                     <NavItem href="/sponsors" label="Sponsors" active={path === "/sponsors"} />
-                    {/* <NavItem href="/posters" label="Posters" /> */}
+                    <a href = "https://docs.google.com/forms/d/e/1FAIpQLSeRJnrSyoLyabjhnkZgt-DE2OGqMhbgSD21fAvwDvInlMGjCA/viewform?usp=dialog" target = "_blank" rel="noopener noreferrer" className="hover:text-blue-600 transition text-blue-800">
+                        Posters
+                        </a>
                 </div>
 
                 {/* Register Button */}
