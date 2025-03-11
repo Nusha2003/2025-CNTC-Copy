@@ -6,15 +6,19 @@ import "./globals.css";
 import NavBar from "../../components/Nav";
 import Footer from "../../components/Footer";
 
-<link rel="icon" href="/favicon.ico" sizes="any" />
-
 const inter = Inter({ subsets: ["latin"] })
 const poppins = Sans({ subsets: ["latin"], weight: ["400", "500", "600", "700", "800", "900"], variable: '--font-poppins', style: ["normal", "italic"]})
 const outfit = Serif({ subsets: ["latin"], weight: ["400", "500", "600", "700", "800", "900"], variable: '--font-outfit'})
 
 export const metadata: Metadata = {
   title: "Neurotech Conference Website",
-  description: "Made with <3 by Neurotech@Davis",
+  description: "Made with <3 by Crux@UCLA & NeurotechUSC",
+  icons:{
+    icon: "/favicon.ico",
+  },
+  verification: {
+    google: "USNVjLEP28cwKY3EaHWoIJ1oP4_SNYwfKyPwyxMQ_qg", 
+  },
 };
 
 export default function RootLayout({
