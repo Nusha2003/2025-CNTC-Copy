@@ -16,6 +16,7 @@ export const metadata: Metadata = {
   icons:{
     icon: "/favicon.ico",
   },
+  keywords: ["Neurotech Conference", "Neurotechnology", "Brain Interfaces", "USC Neurotech", "UCLA Neurotech", "San Diego Events", "UCSD Neurotech", "UCD Neurotech"],
   verification: {
     google: "USNVjLEP28cwKY3EaHWoIJ1oP4_SNYwfKyPwyxMQ_qg", 
   },
