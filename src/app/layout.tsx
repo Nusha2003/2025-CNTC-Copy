@@ -11,7 +11,7 @@ const poppins = Sans({ subsets: ["latin"], weight: ["400", "500", "600", "700", 
 const outfit = Serif({ subsets: ["latin"], weight: ["400", "500", "600", "700", "800", "900"], variable: '--font-outfit'})
 
 export const metadata: Metadata = {
-  title: "Neurotech Conference Website",
+  title: "California Neurotechnology Conference",
   description: "Made with <3 by Crux@UCLA & NeurotechUSC",
   icons:{
     icon: "/favicon.ico",
