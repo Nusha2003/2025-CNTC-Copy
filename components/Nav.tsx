@@ -9,7 +9,7 @@ export default function NavBar() {
     const path = usePathname();
 
     return (
-        <nav className="bg-white fixed top-4 left-20 right-20 z-20 shadow-lg rounded-full px-6 py-2 w-[1200px] mx-auto">
+        <nav className="bg-white fixed top-0 left-0 right-0 z-20 shadow-lg px-6 py-2 w-full mx-auto">
             <div className="max-w-[1200px] mx-auto flex items-center justify-between">
                 
                 {/* Logo Section */}
@@ -20,8 +20,8 @@ export default function NavBar() {
 
                 {/* Navigation Links */}
                 <div className="hidden md:flex space-x-8 text-lg font-medium">
-                    <NavItem href="/" label="Home" active={path === "/"} />
                     <NavItem href="/about" label="About" active={path === "/about"} />
+                    <NavItem href="/speakers" label="Speakers" active={path === "/speakers"} />
                     <NavItem href="/event" label="Event" active={path === "/event"} />
                     <NavItem href="/sponsors" label="Sponsors" active={path === "/sponsors"} />
                     <a href = "https://docs.google.com/forms/d/e/1FAIpQLSeRJnrSyoLyabjhnkZgt-DE2OGqMhbgSD21fAvwDvInlMGjCA/viewform?usp=dialog" target = "_blank" rel="noopener noreferrer" className="hover:text-blue-600 transition text-blue-800">
