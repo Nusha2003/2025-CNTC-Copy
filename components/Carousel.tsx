@@ -7,6 +7,8 @@ import Philip_Sabes from '../public/Philip_Sabes.jpg';
 import JoJo_Platt from '../public/JoJo_Platt.jpg';
 import Gert_Cauwenberghs from '../public/Gert_Cauwenberghs.png';
 import Spero_Koulouras from '../public/Spero_Koulouras.png';
+/*import Albert_Rizzo from '../public/name of file'*/
+/*import Ruthie_Forney from '../public/name of file'*/
 
 export default function CarouselComponent() {
   const speakers = [
@@ -15,6 +17,8 @@ export default function CarouselComponent() {
     { image: JoJo_Platt, name: "JoJo Platt" },
     { image: Gert_Cauwenberghs, name: "Professor Gert Cauwenberghs" },
     { image: Spero_Koulouras, name: "Spero Koulouras" },
+    /*image : Albert_Rizzo, name: "Albert Rizzo"*/ 
+    /*image : Ruthie_Forney, name: "Ruthie Forney"*/ 
   ];
 
   return (
