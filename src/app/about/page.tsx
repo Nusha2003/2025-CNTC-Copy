@@ -49,7 +49,7 @@ export default function About() {
         </div>
 
         {/* Single Row for Event Components */}
-        <div className="flex justify-between items-stretch gap-4 mx-6 md:mx-20">
+        <div className="flex flex-wrap justify-between items-stretch gap-6 mx-6 md:mx-20">
           {[
             { img: panel, title: "Distinguished Guest Speakers", desc: "Benefit from presentations by leading academics who will share detailed insights into their current research projects and the latest developments in neurotechnology." },
             { img: guest_speaker, title: "Interactive Q&A Sessions", desc: "Engage in structured discussions that bridge the gap between theoretical research and practical applications, offering participants a comprehensive view of current challenges in neurotechnology." },
@@ -57,7 +57,7 @@ export default function About() {
             { img: bci_competition, title: "Competitive Presentations and BCI Competition", desc: "Participate in showcases where student clubs and research teams showcase their innovative projects, including a dedicated Brain-Computer Interface (BCI) competition judged by esteemed academic and industry judges." },
             { img: research_poster, title: "Research Poster Sessions", desc: "Explore poster sessions where students present their latest findings, showcasing research across various disciplines." },
           ].map((item, index) => (
-            <div key={index} className="bg-gray-200 bg-opacity-50 rounded-2xl shadow-lg p-6 flex flex-col items-center text-center w-1/5 h-full">
+            <div key={index} className="bg-gray-200 bg-opacity-50 rounded-2xl shadow-lg p-6 flex flex-col items-center text-center w-full md:w-1/6 lg:w-1/6">
               <Image
                 src={item.img}
                 width={120}
@@ -66,7 +66,7 @@ export default function About() {
                 className="h-32 w-32 object-cover rounded-lg shadow-md"
               />
               <h2 className="text-xl font-semibold mt-4">{item.title}</h2>
-              <p className="text-sm text-center mt-2">{item.desc}</p> {/* FIXED TEXT ALIGNMENT */}
+              <p className="text-sm text-center mt-2">{item.desc}</p>
             </div>
           ))}
         </div>
