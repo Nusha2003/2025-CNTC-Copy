@@ -11,11 +11,6 @@ export default function NavBar() {
     const handleNavClick = () => setMenuOpen(false);
 
     return (
-<<<<<<< HEAD
-        <nav className="bg-white fixed top-0 left-0 right-0 z-20 shadow-lg px-6 py-2 w-full mx-auto">
-            <div className="max-w-[1200px] mx-auto flex items-center justify-between">
-                
-=======
         <nav className="bg-white fixed top-0 left-0 right-0 z-20 shadow-lg px-6 py-2 w-full">
             <div className="max-w-[1200px] mx-auto flex items-center justify-center space-x-12">
                 {/* Hamburger Icon for Mobile */}
@@ -33,7 +28,6 @@ export default function NavBar() {
                     </button>
                 </div>
 
->>>>>>> origin/main
                 {/* Logo Section */}
                 <div className="flex-1 flex">
                     <Link href="/" className="md:hidden flex justify-center items-center">
