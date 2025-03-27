@@ -16,7 +16,6 @@
     "@fortawesome/react-fontawesome": "^0.2.2",
     "@mui/icons-material": "^5.17.1",
     "@mui/material": "^5.15.10",
-    "@next/font": "^14.2.15",
     "@nextui-org/react": "^2.2.9",
     "@react-three/fiber": "^8.15.16",
     "@trendyol-js/react-carousel": "^3.0.2",
