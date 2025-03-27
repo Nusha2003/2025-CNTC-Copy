@@ -34,7 +34,6 @@ export default function Home() {
       <div className="relative w-full mt-20">
       <Image
         src={main}
-        layout="intrinsic"
         width={3000}
         height={2000}
         alt="Main"
