@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
-import cntc from "../public/cntc.png";
+import cntc from "../public/Logo_WhiteBG.png";
 
 export default function NavBar() {
     const path = usePathname();
@@ -29,20 +29,20 @@ export default function NavBar() {
                 </div>
 
                 {/* Logo Section */}
-                <div className="flex-1 flex">
-                    <Link href="/" className="md:hidden flex justify-center items-center">
-                        <Image src={cntc} width={80} height={80} alt="Logo" className="rounded-full" />
+                <div className="flex-1 flex justify-start">
+                    <Link href="/" className="md:hidden flex items-left ml-5">
+                        <Image src={cntc} width={100} height={100} alt="Logo" className="rounded-full" />
                     </Link>
                     <Link href="/" className="hidden md:flex items-center space-x-3 justify-start">
-                        <Image src={cntc} width={80} height={80} alt="Logo" className="rounded-full" />
+                        <Image src={cntc} width={100} height={100} alt="Logo" className="rounded-full" />
                     </Link>
                 </div>
 
                 {/* Desktop Navigation Links */}
                 <div className="hidden md:flex space-x-8 text-lg font-medium">
-                    <NavItem href="/about" label="About" active={path === "/about"} />
                     <NavItem href="/speakers" label="Speakers" active={path === "/speakers"} />
                     <NavItem href="/event" label="Event" active={path === "/event"} />
+                    <NavItem href="/about" label="About Us" active={path === "/about"} />
                     <NavItem href="/sponsors" label="Sponsors" active={path === "/sponsors"} />
                     <a href="https://docs.google.com/forms/d/e/1FAIpQLSeRJnrSyoLyabjhnkZgt-DE2OGqMhbgSD21fAvwDvInlMGjCA/viewform?usp=dialog" 
                         target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 transition text-blue-800 py-2">
@@ -73,9 +73,9 @@ export default function NavBar() {
                     </div>
 
                     {/* Menu Items */}
-                    <NavItem href="/" label="Home" active={path === "/"} onClick={handleNavClick} />
-                    <NavItem href="/about" label="About" active={path === "/about"} onClick={handleNavClick} />
+                    <NavItem href="/speakers" label="Speakers" active={path === "/speakers"} onClick={handleNavClick} />
                     <NavItem href="/event" label="Event" active={path === "/event"} onClick={handleNavClick} />
+                    <NavItem href="/about" label="About Us" active={path === "/about"} onClick={handleNavClick} />
                     <NavItem href="/sponsors" label="Sponsors" active={path === "/sponsors"} onClick={handleNavClick} />
                     <a href="https://docs.google.com/forms/d/e/1FAIpQLSeRJnrSyoLyabjhnkZgt-DE2OGqMhbgSD21fAvwDvInlMGjCA/viewform?usp=dialog" 
                         target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 transition text-blue-800">

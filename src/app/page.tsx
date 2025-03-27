@@ -32,70 +32,58 @@ export default function Home() {
 
       {/* Image Container with Relative Positioning */}
       <div className="relative w-full mt-20">
-        <Image
-          src={main}
-          layout="intrinsic"
-          width={3000}
-          height={2000}
-          alt="Main"
-        />
-        {/* Text Overlay */}
-        <div className="absolute inset-0 flex flex-col justify-start top-1/4 left-10 md:left-40 text-white text-xl md:text-7xl font-bold leading-loose">
-          <h1 className="sm:text-xl md:text-4xl lg:text-6xl">2025 CALIFORNIA</h1>
-          <h1 className="sm:text-xl md:text-4xl lg:text-6xl">NEUROTECHNOLOGY</h1>
-          <h1 className="sm:text-xl md:text-4xl lg:text-6xl">CONFERENCE</h1>
-          <div className='mt-4 md:mt-8'>
-            <h2 className="sm:text-xl md:text-4xl">Saturday, April 26th, 2025</h2>
-          </div>
-          <div>
-            <h2 className="sm:text-xl md:text-4xl">UC San Diego</h2>
-          </div>
+      <Image
+        src={main}
+        layout="intrinsic"
+        width={3000}
+        height={2000}
+        alt="Main"
+        className="object-cover sm:h-[80vh] md:h-2/3 h-[70vh] w-full"
+      />
+      {/* Text Overlay */}
+      <div className="absolute inset-0 flex flex-col justify-start top-1/4 left-20 md:left-40 text-white text-xl md:text-7xl font-bold leading-loose">
+        <h1 className="sm:text-xl md:text-4xl lg:text-6xl">2025 California</h1>
+        <h1 className="sm:text-xl md:text-4xl lg:text-6xl">Neurotechnology</h1>
+        <h1 className="sm:text-xl md:text-4xl lg:text-6xl">Conference</h1>
+        <div className='mt-4 md:mt-8'>
+          <h2 className="sm:text-xl md:text-4xl">Saturday, April 26th, 2025</h2>
+        </div>
+        <div>
+          <h2 className="sm:text-xl md:text-4xl">UC San Diego</h2>
         </div>
       </div>
+    </div>
 
-
-
-      <div className="md:flex md:flex-row items-start bg-blue-900 p-11">
-        <div className="items-start">
-          <Image
-              src={home_1}
-              width={1228}
-              height={400}
-              alt="Logo"
-          />
-        </div>
-                
-        <div className="flex flex-col p-10">
-          <span className="font-outfit text-white font-thin">
+    <div className="md:flex md:flex-row items-start bg-blue-900 p-11">
+      <div className="items-start">
+        <Image
+          src={home_1}
+          width={1228}
+          height={400}
+          alt="Logo"
+        />
+      </div>
+                  
+      <div className="flex flex-col p-10">
+        <span className="font-outfit text-white font-thin">
           The third annual California Neurotechnology Conference will be a full-day event held at UC San Diego and jointly hosted by UCLA, UC Berkeley, UC Davis, UC Santa Cruz, and USC. 
           The event will bring together undergraduate student neurotechnology clubs from across the west coast, along with graduate students, academic researchers, and industry professionals. 
           There are five main components of the conference: keynote speaker presentations, industry and academic panels, industry and academic workshops, a student club BCI competition, and student research poster sessions. 
           All five components except the research poster sessions will be live-streamed to reach a broader audience.
-          </span>
+        </span>
 
-          <div className="flex flex-row pt-4">
-            <Link href='/about'>
+        <div className="flex flex-row pt-4">
+          <Link href='/about'>
             <div className="flex flex-shrink font-outfit text-blue-900 bg-red-100 hover:bg-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-none text-sm px-6 py-2 text-center align-middle items-center">
-                              Learn More
-                
-                <ChevronRightIcon/>
+              Learn More
+              <ChevronRightIcon/>
             </div>
-            </Link>
-          </div>
+          </Link>
         </div>
       </div>
+    </div>
       
-      <div className="bg-[#f8f9fa] py-4">
-        <div className="flex flex-row justify-center align-baseline py-9">
-          <span className="flex font-outfit text-3xl">
-            Speakers and Panelists
-          </span>
-        </div>
-        
-        <div className="p-8 pb-12">
-          <Carousel/>
-        </div>
-      </div>
+      
 
       <div className="flex flex-row items-center justify-center place-items-center pt-8">
         <span className="flex font-outfit text-2xl">
